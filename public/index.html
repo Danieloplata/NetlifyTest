@@ -5,16 +5,6 @@
 	<title>Homepage</title>
 
 	<link rel="stylesheet" href="flatpickr.min.css">
-
-	<script src="jquery.min.js"></script> 
-	<script src="flatpickr.js"></script>
-
-	<script>
-	  $("#date").flatpickr({
-	    enableTime: true,
-	    dateFormat: "Y-m-d H:i",
-	  });
-	</script>
 </head>
 <body>
 	<div>
@@ -23,5 +13,14 @@
 			<input type="input" id="date" name="date" placeholder="Click to select date" required/>
 		</div>
 	</div>
+
+	<script src="jquery.min.js"></script> 
+	<script src="flatpickr.js"></script>
+	<script>
+	  $("#date").flatpickr({
+	    enableTime: true,
+	    dateFormat: "Y-m-d H:i",
+	  });
+	</script>
 </body>
 </html>
