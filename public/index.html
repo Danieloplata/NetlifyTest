@@ -3,10 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Homepage</title>
+
+	<link rel="stylesheet" href="flatpickr.min.css">
+
+	<script src="jquery.min.js"></script> 
+	<script src="flatpickr.js"></script>
+
+	<script>
+	  $("#date").flatpickr({
+	    enableTime: true,
+	    dateFormat: "Y-m-d H:i",
+	  });
+	</script>
 </head>
 <body>
 	<div>
-		<h1>Homepage</h1>
+		<h1>Date:</h1>
+		<div class="content">
+			<input type="input" id="date" name="date" placeholder="Click to select date" required/>
+		</div>
 	</div>
 </body>
 </html>
